@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity implements MonthYearPickerDialog.OnDateSetListener {
 
     private Button displayDialogButton;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements MonthYearPickerDi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayDialogButton = (Button)findViewById(R.id.btn_display_dialog);
+
         displayDialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
